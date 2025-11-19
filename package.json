@@ -1,0 +1,62 @@
+{
+  "name": "@litgrid/core",
+  "version": "1.0.0",
+  "description": "Modern, lightweight, high-performance data grid web component built with Lit 3.0",
+  "type": "module",
+  "main": "./dist/lit-grid.umd.js",
+  "module": "./dist/lit-grid.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lit-grid.es.js",
+      "require": "./dist/lit-grid.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "test": "web-test-runner",
+    "test:watch": "web-test-runner --watch"
+  },
+  "keywords": [
+    "lit",
+    "web-components",
+    "data-grid",
+    "table",
+    "datagrid",
+    "virtual-scroll",
+    "performance",
+    "typescript",
+    "lit-element"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "lit": "^3.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@web/dev-server-esbuild": "^1.0.4",
+    "@web/test-runner": "^0.20.2",
+    "chai": "^6.2.1",
+    "lit": "^3.3.1",
+    "terser": "^5.44.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/lit-grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/lit-grid/issues"
+  },
+  "homepage": "https://github.com/yourusername/lit-grid#readme"
+}
